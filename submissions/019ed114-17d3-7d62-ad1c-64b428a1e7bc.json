@@ -1,0 +1,56 @@
+{
+  "manifest_version": "0.1.0",
+  "config_schema": {
+    "type": "object",
+    "properties": {},
+    "required": [],
+    "additionalProperties": false
+  },
+  "components": {
+    "gateway": {
+      "manifest": "https://raw.githubusercontent.com/RDI-Foundation/agentbeats-gateway/refs/tags/v0.3/amber-manifest.json5",
+      "config": {
+        "assessment_config": {
+          "num_scenarios": 5
+        },
+        "participant_roles": {
+          "green": "green",
+          "purple1": "defender"
+        },
+        "callback_urls": {}
+      }
+    },
+    "green": {
+      "manifest": "https://raw.githubusercontent.com/saishameh/test-intentguard/main/green/amber-manifest.json5",
+      "config": {}
+    },
+    "defender": {
+      "manifest": "https://raw.githubusercontent.com/saishameh/test-intentguard/main/purple/amber-manifest.json5",
+      "config": {}
+    }
+  },
+  "bindings": [
+    {
+      "to": "#gateway.green",
+      "from": "#green.a2a"
+    },
+    {
+      "to": "#gateway.purple1",
+      "from": "#defender.a2a"
+    },
+    {
+      "to": "#green.defender",
+      "from": "#gateway.proxy",
+      "weak": true
+    }
+  ],
+  "exports": {
+    "results": "#gateway.results"
+  },
+  "metadata": {
+    "agentbeats_ids": {
+      "green": "019ed0f6-6caf-7263-b000-f31ab8794ba8",
+      "defender": "019ed0fa-21ec-70c0-91ff-2b12eb528c4c"
+    }
+  }
+}
