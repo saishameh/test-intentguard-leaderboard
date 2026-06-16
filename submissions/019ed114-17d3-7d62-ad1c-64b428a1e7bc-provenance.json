@@ -1,0 +1,22 @@
+{
+  "image_digests": {
+    "/defender": "ghcr.io/saishameh/testintentguard-purple@sha256:965a11bd9dbd106bb838c4ef78ec02e683925411d634b313b8785f73eb261ca6",
+    "/gateway": "ghcr.io/rdi-foundation/agentbeats-gateway@sha256:3f9976889c598092dc4273312ec431cbc48bbe064ff65b5613425f4990bc1d4c",
+    "/green": "ghcr.io/saishameh/testintentguard-green@sha256:a6e632a6c75463066d31fc1714a0aaa0c468195f5a8eb518abbd16c9244eadb5"
+  },
+  "manifest_digests": {
+    "/": "sha256:hOKKMw1lRZn6NdlUV8S3N5cm58qQkSCmzlVOevsSoLE=",
+    "/defender": "sha256:/a99jZcd52Xjc7yUmWjZcE4Dl9Th5lZeXmfY5Jxbu8Q=",
+    "/gateway": "sha256:Ba99ymNGSymbrF9jGwLfnZaSnzPrw9sTJ5veaYMxV2Q=",
+    "/green": "sha256:HY4ARsr7GziVI1BXq5cDvfYiiw/DBskRgiCVnc5UYkY="
+  },
+  "timestamp": "2026-06-16T15:38:22Z",
+  "github_actions": {
+    "run_url": "https://github.com/saishameh/test-intentguard-leaderboard/actions/runs/27629312195",
+    "ref": "refs/pull/1/merge",
+    "sha": "3220323246e525b46e4db95330040fafd22b1fd2",
+    "repository_url": "https://github.com/saishameh/test-intentguard-leaderboard",
+    "workflow_ref": "saishameh/test-intentguard-leaderboard/.github/workflows/quick-submit.yml@refs/pull/1/merge",
+    "workflow_sha": "3220323246e525b46e4db95330040fafd22b1fd2"
+  }
+}
